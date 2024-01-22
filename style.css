@@ -15,6 +15,13 @@ body {
 header {
     min-height: 100svh;
     background-image: radial-gradient(circle at 25% 65%, #000, #222);
+
+    background-color: #0d0d0d;
+    /* color: var(--font-clr); */
+    background-image: radial-gradient(circle at 30rem 38rem, #000, #000 15rem, #1111 15rem),
+                      radial-gradient(circle at 36rem 38rem, #090909, #090909 28rem, #1111 28rem),
+                      radial-gradient(circle at 46rem 38rem, #0b0b0b, #0b0b0b 46rem, #1111 46rem);
+    
     padding: 15rem 20rem;
     display: grid;
     place-items: end start;
