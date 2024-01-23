@@ -6,29 +6,28 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #111;
+    background-color: #0c0c0c;
     color: #eee;
     font-size: 1.25rem;
 }
 
-
 header {
     min-height: 100svh;
-    background-image: radial-gradient(circle at 25% 65%, #000, #222);
+    /* background-image: radial-gradient(circle at 25% 65%, #000, #222); */
 
-    background-color: #0d0d0d;
-    /* color: var(--font-clr); */
+    background-color: #0c0c0c;
     background-image: radial-gradient(circle at 30rem 38rem, #000, #000 15rem, #1111 15rem),
-                      radial-gradient(circle at 36rem 38rem, #090909, #090909 28rem, #1111 28rem),
-                      radial-gradient(circle at 46rem 38rem, #0b0b0b, #0b0b0b 46rem, #1111 46rem);
+                      radial-gradient(circle at 36rem 38rem, #070707, #070707 27rem, #1111 27rem),
+                      radial-gradient(circle at 44rem 38rem, #0a0a0a, #0a0a0a 42rem, #1111 42rem);
     
     padding: 15rem 20rem;
     display: grid;
     place-items: end start;
 
     & nav {
-        text-align: center;
-        padding-block: 2rem 1rem;
+        display: grid;
+        place-items: center;
+        padding-block: 1.5rem 1rem;
         position: absolute;
         top: 0;
         left: 0;
@@ -39,7 +38,7 @@ header {
 
     & .title {
         letter-spacing: 6px;
-        -webkit-text-stroke: 3px yellow;
+        -webkit-text-stroke: 4px yellow;
         color: transparent;
         line-height: .55;
         font-size: 6rem;
@@ -48,7 +47,7 @@ header {
             letter-spacing: 1px;
             -webkit-text-stroke: 0;
             font-size: 2.5rem;
-            color: #eee;
+            color: #ccc;
         }
     }
 }
@@ -110,12 +109,17 @@ section > * {
 }
 
 footer {
-    text-align: center;
+    display: grid;
+    place-items: center;
     padding: .5rem;
     background-color: yellow;
-    color: #222;
-
+    
     & a {
         text-decoration: none;
+        color: #222;
+
+        &:hover {
+            color: #000;
+        }
     }
 }
